@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, h3 {
+    font-family: "Young Serif", serif;;
+}
+
+h2, p, ul, ol, span {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+p {
+    font-weight: 400;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main.card {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 100px 0;
+    padding: 1.9rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+}
+
+section, .displayImg {
+    width: 100%;
+    height: auto;
+}
+
+.displayImg {
+    margin-bottom: 1.5rem;
+}
+
+.displayImg > img {
+    display: block;
+    max-width: 100%;
+    border-radius: .5rem;
+}
+
+section.topic {
+    margin-bottom: 1.5rem;
+}
+
+section.topic > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.1rem;
+    color: hsl(24, 5%, 18%);
+}
+
+section.topic > p {
+    line-height: 1.4;
+}
+
+section.prepTime {
+    border-radius: .4rem;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    background-color: hsl(330, 100%, 98%);
+}
+
+section.prepTime > h2 {
+    font-size: 1.2rem;
+    color: hsl(332, 51%, 32%);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+section.prepTime > ul {
+    list-style-type: disc;
+}
+
+section.prepTime > ul > li > span {
+    font-weight: 600;
+}
+
+section > ul {
+    padding: 0;
+    padding-left: 1.5rem;
+}
+
+section > ul > li {
+    margin-bottom: .9rem;
+}
+
+section > h3 {
+    font-size: 2rem;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1.5rem;
+}
+
+section.ingredients, section.instructions {
+    margin-bottom: 1.7rem;
+    border-bottom: .5px solid grey;
+    padding-bottom: 1.5rem;
+}
+
+section.ingredients > ul {
+    list-style-type: square;
+    list-style-image: linear-gradient(hsl(14, 45%, 36%), hsl(14, 45%, 36%));
+    list-style-image: -moz-linear-gradient(hsl(14, 45%, 36%), hsl(14, 45%, 36%));
+}
+
+section.instructions > ol {
+    padding: 0;
+    padding-left: 1.5rem;
+    line-height: 1.5;
+}
+
+section.instructions > ol > li {
+    margin-bottom: .6rem;
+}
+
+section.instructions > ol > li > span {
+    font-weight: 600;
+}
+
+section.nutrition > p {
+    margin: 1.5rem 0 1.7rem 0;
+}
+
+section.nutrition > .foot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1rem;
+    border-bottom: .5px solid grey;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+section.nutrition > .four {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+section.nutrition > .foot > .s {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+@media(max-width:768px) {
+    main.card {
+        width: 100%;
+        max-width: inherit;
+        padding: 0 0 2rem 0;
+        margin: 0;
+    }
+
+    .displayImg > img {
+        border-radius: 0;
+    }
+
+    section {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
